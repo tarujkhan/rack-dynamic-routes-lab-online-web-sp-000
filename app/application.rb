@@ -11,6 +11,7 @@ class Application
     #     #binding.pry
     #     if @name == item
     item_name = req.path.split("/items/").last
+    binding.pry
         if item =@@items.find{|i| i.name == item_name}
      resp.write item.price
    else
